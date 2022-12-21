@@ -8,4 +8,12 @@ class AppStrings {
 
   static const String contentType = 'Content-Type';
   static const String applicationJson = 'application/json';
+
+  static const String serverFailure = 'Server Failure';
+  static const String cacheFailure = 'Cache Failure';
+  static const String unexpectedError = 'Unexpected Error';
+
+  static const String somethingWentWrong = 'Something went Wrong';
+  static const String pleaseTryAgain = 'Please Try Again';
+  static const String reloadScreen = 'Reload Screen';
 }
