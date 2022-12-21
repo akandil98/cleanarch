@@ -1,9 +1,12 @@
 import 'package:cleanarch/core/utils/app_strings.dart';
 import 'package:cleanarch/features/random_quote/presentation/screens/quote_screen.dart';
+import 'package:cleanarch/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
   static const String initialRoute = '/';
+
+  static const String randomQuoteRoute = '/randomQuote';
 
   //static const String favouriteQuoteRoute = '/favouriteQuote';
 }
@@ -12,6 +15,10 @@ class AppRoutes {
   static Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       case Routes.initialRoute:
+        return MaterialPageRoute(
+          builder: (context) => const SplashScreen(),
+        );
+      case Routes.randomQuoteRoute:
         return MaterialPageRoute(
           builder: (context) => const QuoteScreen(),
         );
