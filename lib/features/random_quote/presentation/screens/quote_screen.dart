@@ -38,6 +38,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
           return const ErrorScreen();
         } else if (state is RandomQuoteLoaded) {
           return Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               QuoteContent(
                 quote: state.quote,
