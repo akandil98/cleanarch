@@ -1,9 +1,6 @@
 import 'package:cleanarch/core/utils/app_strings.dart';
-import 'package:cleanarch/features/random_quote/presentation/cubit/random_quote_cubit.dart';
 import 'package:cleanarch/features/random_quote/presentation/screens/quote_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:cleanarch/injection_container.dart' as di;
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Routes {
   static const String initialRoute = '/';

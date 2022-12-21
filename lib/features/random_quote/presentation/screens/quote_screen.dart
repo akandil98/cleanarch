@@ -35,7 +35,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
             ),
           );
         } else if (state is RandomQuoteError) {
-          return const ErrorScreen();
+          return ErrorScreen(onPress: () => _getRandomQuote());
         } else if (state is RandomQuoteLoaded) {
           return Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,10 +1,10 @@
-import 'package:bloc/bloc.dart';
 import 'package:cleanarch/core/error/failures.dart';
 import 'package:cleanarch/core/usecases/usecase.dart';
 import 'package:cleanarch/core/utils/app_strings.dart';
 import 'package:cleanarch/features/random_quote/domain/usecases/get_random_quote.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../domain/entities/quote.dart';
 
